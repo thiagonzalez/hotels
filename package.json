@@ -1,0 +1,21 @@
+{
+  "name": "hotels",
+  "version": "1.0.0",
+  "description": "List of available hotels using a range of dates and filters to find the ideal hotel for you and your family.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "jshint-stylish": "^2.2.1"
+  }
+}
