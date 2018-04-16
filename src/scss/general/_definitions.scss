@@ -1,0 +1,80 @@
+// Colors
+$color-primary: #f98100;
+$color-secondary: #79bd1a;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: #B5B5B5;
+  font-family: 'Heebo', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.container { 
+  max-width: 1280px; 
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; } 
+a { text-decoration: none }
+
+
+// Titles
+.header-1 {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 2.5px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.header-2 {
+  color: $color-primary;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+// Other default elements
+p {
+  color: #b5b5b5;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: $color-primary;
+  border-radius: 100px;
+  border: 2px solid $color-primary;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 15px 45px;
+
+  &.button-inactive {
+    background: #fff;
+    color: $color-primary;
+    cursor: default;
+  }
+
+  &.button-smaller {
+    border-width: 1px;
+    font-size: 13px;
+    padding: 6px 25px;
+  }
+
+  &.button-secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+}

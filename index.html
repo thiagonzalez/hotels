@@ -11,6 +11,130 @@
 </head>
 
 <body>
+    <header id="main-top">
+        <nav id="main-menu">
+            <ul class="container">
+                <li><a href="#">The Queen City</a></li>
+                <li><a href="#">My Reservations</a></li>
+                <li><a href="#">Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="navigation">
+        <div id="presentation">
+            <h1>Welcome to <strong>Charlotte</strong> The Queen City</h1>
+        </div>
+
+        <div id="calendar">
+            <h2 class="header-1">Select the dates to stay in Charlotte</h2>
+
+            <form action="#">
+                <div class="description">
+                    <div class="item">
+                        <span class="title">Check-in</span>
+                        <span class="date">August <strong>17</strong>, 2018</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="title">Check-out</span>
+                        <span class="date">Choose a date</span>
+                    </div>
+
+                    <button class="button inactive">Search hotels</button>
+                </div>
+                
+                <div class="calendar">
+                    calendar
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="content">
+        <div class="container">
+            <h5 class="header-1">Best choices between {date start} and {date end}</h5>
+
+            <aside id="filter">
+                <h6 class="header-1">Filters</h6>
+                
+                <div class="price-range">
+                    <span>Price Range per <strong>night</strong></span>
+
+                    <div class="range"></div>
+
+                    <div class="left">
+                        <span>Min</span>
+                        <span class="value">$100</span>
+                    </div>
+
+                    <div class="right">
+                        <span>Max</span>
+                        <span class="value">$600</span>
+                    </div>
+                </div>
+
+                <div class="rating">
+                    <span>Stars</span>
+
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <label for="">
+                                <span class="star"></span>
+                                <span class="no-star"></span>
+                                <span class="no-star"></span>
+                                <span class="no-star"></span>
+                                <span class="no-star"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div id="hotel-list">
+                <article>
+                    <img src="http://placehold.it/262x262/000" alt="title" class="thumbnail">
+                    
+                    <div class="description">
+                        <div class="rating">rating</div>
+                        <h2 class="header-2">Hyatt Place Charlotte Airport/Lake Pointe</h2>
+                        <p>This hotel is located 7 miles from downtown Charlotte and 5 miles from Charlotte Douglas International Airport</p>
+
+                        <div class="actions">
+                            <a href="#" class="button button-smaller button-inactive">Book now</a>
+                            <a href="#" class="button button-smaller button-secondary">Price history</a>
+                        </div>
+                    </div>
+
+                    <div class="information">
+                        <div class="item price-total">
+                            <span>Total <strong>8 nights</strong></span>
+                            <span class="price">$670</span>
+                        </div>
+
+                        <div class="item price-night">
+                            <span>Per night</span>
+                            <span class="price">$670</span>
+                        </div>
+                    </div>
+                </article>   
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <nav class="social">
+            <ul>
+                <li class="icon-facebook"><a href="#" target="_blank">Facebook</a></li>
+                <li class="icon-twitter"><a href="#" target="_blank">Twitter</a></li>
+                <li class="icon-instagram"><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </nav>
+
+        <span>&copy; 2004-2018 Visit Charlotte. All Rights Reserved. 500 S. College Street, Suite 300, Charlotte, NC 28202</span>
+    </footer>
+
     <script type="text/javascript" src="assets/js/scripts.min.js"></script>
 </body>
 </html>

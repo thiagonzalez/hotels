@@ -1,0 +1,23 @@
+#main-footer {
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.15);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social { 
+  margin-bottom: 40px; 
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+
+    a {
+      background-color: $color-primary;
+      border-radius: 50%;
+      display: block;
+      height: 34px;
+      text-indent: -9999em;
+      width: 34px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+#content {
+  @include clearfix;
+  margin-bottom: 100px;
+}
+
+#hotel-list {
+  float: left;
+  width: 75%;
+}

@@ -1,0 +1,40 @@
+#calendar {
+  @include clearfix;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 0 20px 20px rgba(0,0,0,0.13);
+  margin: -150px auto 0;
+  padding: 60px 100px;
+  width: 838px;
+
+  .item { 
+    margin-bottom: 40px }
+
+    .title {
+      color: #555;
+      font-size: 22px;
+      letter-spacing: 2.5px;
+      line-height: 32px;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .date {
+      color: #b5b5b5;
+      font-size: 20px;
+      letter-spacing: 1.4px;
+      line-height: 30px;
+      display: block;
+    }
+
+  .description { float: left }
+
+  .calendar {
+    float: right;
+    width: 310px;
+    height: 350px;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+  }
+}

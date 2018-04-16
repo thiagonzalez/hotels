@@ -1,0 +1,62 @@
+#navigation { margin-bottom: 80px }
+
+#main-menu {
+  left: 0;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    margin-right: 40px;
+    
+    a {
+      color: #fff;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+
+#presentation {
+  background: url('../img/header-bg.png') center center no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding-top: 100px;
+  text-align: center;
+  width: 100%;
+  
+  h1 {
+    color: #fff;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    &:before {
+      background: url('../img/crown-white.png') 0 0 no-repeat;
+      background-size: 54px auto;
+      content: '';
+      display: block;
+      height: 45px;
+      margin: 0 auto 20px;
+      width: 54px;
+    }
+
+    strong {
+      border-bottom: 2px solid #fff;
+      border-top: 2px solid #fff;
+      clear: both;
+      display: block;
+      font-size: 76px;
+      font-weight: 600;
+      letter-spacing: 10.6px;
+      line-height: 93px;
+      margin: 20px 0;
+      padding: 10px 0;
+    }
+  }
+}
