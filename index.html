@@ -33,19 +33,20 @@
                 <div class="description">
                     <div class="item">
                         <span class="title">Check-in</span>
-                        <span class="date">August <strong>17</strong>, 2018</span>
+                        <span data-first-date class="date">Choose a date</span>
                     </div>
 
                     <div class="item">
                         <span class="title">Check-out</span>
-                        <span class="date">Choose a date</span>
+                        <span data-second-date class="date">Choose a date</span>
                     </div>
 
                     <button class="button inactive">Search hotels</button>
                 </div>
                 
                 <div class="calendar">
-                    calendar
+                    <input type="text" id="calendar-picker">
+                    <div id="calendar-picker-container"></div>
                 </div>
             </form>
         </div>
