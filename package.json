@@ -9,6 +9,8 @@
   "author": "Thiago Gonzalez",
   "license": "ISC",
   "devDependencies": {
+    "bourbon": "^5.0.0",
+    "bourbon-neat": "^1.9.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",

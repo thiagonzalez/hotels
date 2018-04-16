@@ -3,9 +3,12 @@ var gulp  = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
+    bourbon = require("bourbon").includePaths,
+    neat = require("bourbon-neat").includePaths,
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css');
+
 
 // Scripts task
 gulp.task('scripts', function() {
@@ -20,7 +23,9 @@ gulp.task('scripts', function() {
 // Styles task
 gulp.task('styles', function() {
   return gulp.src('src/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass({
+        includePaths: [bourbon, neat]
+    }))
     .pipe(autoprefixer(
         {browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1']
     }))
