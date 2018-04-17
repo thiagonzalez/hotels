@@ -34,6 +34,78 @@
     width: 310px;
     height: 350px;
     color: #fff;
-    padding: 20px;
+  }
+}
+
+#calendar-picker-container {
+  .date-picker, .date-picker-wrapper { 
+    font-family: 'Heebo', Arial, sans-serif; 
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+  }
+
+  .drp_top-bar { display: none }
+
+  .date-picker-wrapper {
+    border: none;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+
+    .month-wrapper { 
+      border: none; 
+
+      table {
+        td { padding-bottom: 10px }
+        .caption { height: 60px }
+      }
+    }
+  }
+
+  .month1 {
+    width: 100%;
+    border-top: 1px solid #e3e3e3;
+  }
+
+  .week-name th { 
+    padding-bottom: 20px; 
+    color: #b5b5b5;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .month-element {
+    font-weight: normal;
+    text-transform: capitalize;
+
+    &:last-child {
+      &:before {
+        content: '/';
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 3px;
+      }
+    }
+  }
+
+  .day {
+    font-size: 15px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    padding: 0;
+    margin: 0;
+
+    &.real-today { background: none }
+    &.first-date-selected { border-radius: 50% 0 0 50% }
+
+    &.first-date-selected,
+    &.checked,
+    &.hovering { 
+      background-color: $color-secondary !important; 
+      color: #fff;
+    }
+
+    &.last-date-selected { border-radius: 0 50% 50% 0 }
   }
 }
