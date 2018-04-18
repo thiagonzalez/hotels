@@ -41,7 +41,7 @@
                         <span data-second-date class="date">Choose a date</span>
                     </div>
 
-                    <button class="button inactive">Search hotels</button>
+                    <button class="button button-inactive">Search hotels</button>
                 </div>
                 
                 <div class="calendar">
@@ -60,33 +60,77 @@
                 <h6 class="header-1">Filters</h6>
                 
                 <div class="price-range">
-                    <span>Price Range per <strong>night</strong></span>
+                    <span class="header-3">Price Range per <strong>night</strong></span>
 
-                    <div class="range"></div>
+                    <div id="price-slider" data-min-value="0" data-max-value="600"></div>
 
                     <div class="left">
                         <span>Min</span>
-                        <span class="value">$100</span>
+                        <strong id="price-slider-min-text" class="value"></strong>
                     </div>
 
                     <div class="right">
                         <span>Max</span>
-                        <span class="value">$600</span>
+                        <strong id="price-slider-max-text" class="value"></strong>
                     </div>
                 </div>
 
                 <div class="rating">
-                    <span>Stars</span>
+                    <span class="header-3">Stars</span>
 
                     <ul>
                         <li>
-                            <input type="checkbox">
-                            <label for="">
-                                <span class="star"></span>
-                                <span class="no-star"></span>
-                                <span class="no-star"></span>
-                                <span class="no-star"></span>
-                                <span class="no-star"></span>
+                            <input id="star-1" type="checkbox">
+                            <label for="star-1">
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input id="star-2" type="checkbox">
+                            <label for="star-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input id="star-3" type="checkbox">
+                            <label for="star-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input id="star-4" type="checkbox">
+                            <label for="star-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input id="star-5" type="checkbox">
+                            <label for="star-5">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </label>
                         </li>
                     </ul>
@@ -127,15 +171,15 @@
     <footer id="main-footer">
         <nav class="social">
             <ul>
-                <li class="icon-facebook"><a href="#" target="_blank">Facebook</a></li>
-                <li class="icon-twitter"><a href="#" target="_blank">Twitter</a></li>
-                <li class="icon-instagram"><a href="#" target="_blank">Instagram</a></li>
+                <li class="icon-facebook"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="icon-twitter"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="icon-instagram"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
 
         <span>&copy; 2004-2018 Visit Charlotte. All Rights Reserved. 500 S. College Street, Suite 300, Charlotte, NC 28202</span>
     </footer>
 
-    <script type="text/javascript" src="assets/js/scripts.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.min.js"></script>
 </body>
 </html>

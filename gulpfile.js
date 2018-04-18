@@ -1,10 +1,11 @@
 // Require Gulp and plugins
 var gulp  = require('gulp'),
-    concat = require('gulp-concat'),
+    include = require('gulp-include'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     bourbon = require("bourbon").includePaths,
     neat = require("bourbon-neat").includePaths,
+    slider = require("nouislider").includePaths,
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css');
@@ -12,8 +13,8 @@ var gulp  = require('gulp'),
 
 // Scripts task
 gulp.task('scripts', function() {
-  return gulp.src('src/js/**/*.js')
-    .pipe(concat('scripts.js'))
+  return gulp.src('src/js/main.js')
+    .pipe(include()).on('error', console.log)
     .pipe(gulp.dest('assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())

@@ -16,8 +16,15 @@
       border-radius: 50%;
       display: block;
       height: 34px;
-      text-indent: -9999em;
       width: 34px;
+
+      &:hover { background-color: lighten($color-primary, 10%) }
+
+      i {
+        color: #fff;
+        line-height: 34px;
+        font-size: 20px;
+      }
     }
   }
 }

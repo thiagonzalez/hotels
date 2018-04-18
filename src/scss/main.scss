@@ -1,10 +1,12 @@
 // Libs
 @import 'https://fonts.googleapis.com/css?family=Heebo:400,700|Montserrat:400,600,700';
+@import 'https://use.fontawesome.com/releases/v5.0.10/css/all.css';
 @import 'bourbon';
 @import 'neat';
 
 @import 'libs/normalize';
 @import 'libs/daterangepicker';
+@import 'libs/nouislider';
 
 // Configs
 @import 'general/definitions';
