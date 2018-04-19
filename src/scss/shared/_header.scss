@@ -38,7 +38,7 @@
     
     &:before {
       background: url('../img/crown-white.png') 0 0 no-repeat;
-      background-size: 54px auto;
+      background-size: 100% auto;
       content: '';
       display: block;
       height: 45px;
@@ -59,4 +59,39 @@
       padding: 10px 0;
     }
   }
+}
+
+
+@media (max-width: 480px) {
+  #main-menu {
+    text-align: center;
+    top: 20px;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+
+  #presentation {
+    padding-top: 70px;
+    height: 380px;
+
+    h1 {
+      font-size: 18px;
+
+      &:before {
+        height: 28px;
+        width: 32px;
+      }
+
+      strong {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #navigation { margin-bottom: 40px }
 }

@@ -1,0 +1,10 @@
+$neat-grid: (
+  columns: 12,
+  gutter: 40px
+);
+
+.container { 
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 10px;
+}

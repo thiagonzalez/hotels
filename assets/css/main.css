@@ -1,13 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Heebo:400,700|Montserrat:400,600,700';
 @import 'https://use.fontawesome.com/releases/v5.0.10/css/all.css';
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-*, *::after, *::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -982,10 +974,6 @@ body {
   font-size: 12px;
   line-height: 18px; }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto; }
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
@@ -998,6 +986,7 @@ a {
   font-size: 22px;
   font-weight: normal;
   letter-spacing: 2.5px;
+  line-height: 26px;
   margin-bottom: 60px;
   text-align: center; }
 
@@ -1051,6 +1040,21 @@ p {
   letter-spacing: 2.5px;
   line-height: 32px; }
 
+@media (max-width: 480px) {
+  .header-1 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px; }
+  .header-2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px; } }
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 10px; }
+
 #navigation {
   margin-bottom: 80px; }
 
@@ -1085,7 +1089,7 @@ p {
     text-transform: uppercase; }
     #presentation h1:before {
       background: url("../img/crown-white.png") 0 0 no-repeat;
-      background-size: 54px auto;
+      background-size: 100% auto;
       content: '';
       display: block;
       height: 45px;
@@ -1102,6 +1106,28 @@ p {
       line-height: 93px;
       margin: 20px 0;
       padding: 10px 0; }
+
+@media (max-width: 480px) {
+  #main-menu {
+    text-align: center;
+    top: 20px; }
+    #main-menu li {
+      margin: 0 10px; }
+  #presentation {
+    padding-top: 70px;
+    height: 380px; }
+    #presentation h1 {
+      font-size: 18px; }
+      #presentation h1:before {
+        height: 28px;
+        width: 32px; }
+      #presentation h1 strong {
+        font-size: 28px;
+        line-height: 32px; } }
+
+@media (max-width: 480px) {
+  #navigation {
+    margin-bottom: 40px; } }
 
 #main-footer {
   -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
@@ -1127,6 +1153,12 @@ p {
         line-height: 34px;
         font-size: 20px; }
 
+@media (max-width: 480px) {
+  #main-footer {
+    padding: 20px 0; }
+  .social {
+    margin-bottom: 20px; } }
+
 #content {
   margin-bottom: 100px; }
   #content::after {
@@ -1134,9 +1166,15 @@ p {
     content: "";
     display: block; }
 
-#hotel-list {
-  float: left;
-  width: 75%; }
+@media (min-width: 960px) {
+  #hotel-list {
+    width: calc(75% - 70px);
+    float: left;
+    margin-left: 40px; } }
+
+@media (max-width: 480px) {
+  #content {
+    margin-bottom: 20px; } }
 
 #calendar {
   background: #fff;
@@ -1145,7 +1183,7 @@ p {
           box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.13);
   margin: -150px auto 0;
   padding: 60px 100px;
-  width: 838px; }
+  max-width: 838px; }
   #calendar::after {
     clear: both;
     content: "";
@@ -1230,10 +1268,21 @@ p {
   #calendar-picker-container .day.last-date-selected {
     border-radius: 0 50% 50% 0; }
 
+@media (max-width: 480px) {
+  #calendar {
+    padding: 20px 20px 35px;
+    margin-left: 10px;
+    margin-right: 10px; }
+    #calendar .description {
+      display: none; } }
+
 #filter {
-  float: left;
-  margin-right: 5%;
-  width: 20%; }
+  margin-bottom: 40px; }
+  @media (min-width: 960px) {
+    #filter {
+      width: calc(25% - 50px);
+      float: left;
+      margin-left: 40px; } }
   #filter .header-1 {
     text-align: left;
     margin-bottom: 40px; }
@@ -1303,6 +1352,14 @@ p {
     color: #FFBA23;
     font-size: 26px; }
 
+@media (max-width: 480px) {
+  #filter, #filter .header-1 {
+    margin-bottom: 15px; }
+  #filter .header-1 {
+    color: #f98100; }
+  #filter > div {
+    display: none; } }
+
 #hotel-list article {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1322,6 +1379,10 @@ p {
             box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.15);
     margin-left: -100px;
     margin-right: 40px; }
+  #hotel-list article .rating {
+    color: #FFBA23;
+    font-size: 14px;
+    margin-bottom: 10px; }
   #hotel-list article .information {
     border-left: 1px solid #d9d9d9;
     height: 100%;
@@ -1355,3 +1416,33 @@ p {
       letter-spacing: 2.3px;
       line-height: 24px;
       color: #f98100; }
+
+@media (max-width: 480px) {
+  #hotel-list article {
+    display: block;
+    margin: 0 0 20px;
+    padding: 20px; }
+    #hotel-list article .thumbnail {
+      width: 100px;
+      float: left;
+      margin: 0 20px 0 0; }
+    #hotel-list article .actions .button {
+      margin-right: 10px; }
+      #hotel-list article .actions .button:last-child {
+        margin: 0; }
+    #hotel-list article .information {
+      border: none;
+      border-top: 1px solid #d9d9d9;
+      padding: 10px 0 0;
+      margin: 10px 0 0; }
+      #hotel-list article .information::after {
+        clear: both;
+        content: "";
+        display: block; }
+      #hotel-list article .information .item {
+        margin: 0 !important; }
+      #hotel-list article .information .price-total {
+        float: left;
+        text-align: left; }
+      #hotel-list article .information .price-night {
+        float: right; } }

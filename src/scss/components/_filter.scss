@@ -1,7 +1,9 @@
 #filter {
-  float: left;
-  margin-right: 5%;
-  width: 20%;
+  margin-bottom: 40px;
+
+  @media (min-width: 960px) {
+    @include grid-column(3);
+  }
 
   .header-1 { 
     text-align: left; 
@@ -94,5 +96,14 @@
       color: $color-stars;
       font-size: 26px;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  #filter {
+    &, .header-1 { margin-bottom: 15px }
+
+    .header-1 { color: $color-primary }
+    > div { display: none }
   }
 }

@@ -10,7 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "bourbon": "^5.0.0",
-    "bourbon-neat": "^1.9.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-include": "^2.3.1",
@@ -18,6 +17,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "node-neat": "^2.0.0-beta.0"
   }
 }
